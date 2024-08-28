@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto | Oracle y AluraLATAM</title>
+    <link rel="shortcut icon" href="./img/alura_oracle.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="header_img">
+                <img src="./img/alura_oracle.svg" alt="Logo de curso AluraLatam y Oracle">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <form class="encriptador_form">
+                    <div class="text_in">
+                        <textarea name="text_in_area" id="texto" placeholder="Ingresar un texto para iniciar :3" required></textarea>
+                        <div class="text_in_info">
+                            <div class="info">
+                                <img src="./img/advertencia.svg" alt="">
+                                <p id="warning">Solo letras minúsculas, sin numeros, sin acentos y sin caracteres especiales.</p>
+                            </div>
+                            <div class="text_in_btns">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="text_out_sec">
+                    <div class="out_content">
+                        <div class="content" id="default">
+                            <div class="text_out_img">
+                                <img src="./img/chicaExploradora.svg" alt="Imagen animada">
+                            </div>
+                            <p>¡Sin misterios que resolver!</p>
+                            <p>Ingresa un texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class="content oculto" id="result">
+                            <textarea name="text_out_area" id="texto_out" disabled></textarea>
+                            <button id="copiar">Copiar texto</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <footer class="pie-pagina">
+        <p>© 2024 Todos los derechos reservados por Andrés Burbano | Oracle y AluraLatam G7. </p>
+        <!-- 
+  El atributo rel="noopener noreferrer" se usa por seguridad al abrir enlaces externos 
+  en nuevas pestañas (target="_blank"). 
+
+  noopener: Evita que la nueva pestaña acceda a la página original a través de window.opener,
+  protegiendo contra ataques de "tabnabbing" donde un sitio malicioso podría 
+  modificar la página original o redirigir al usuario.
+
+  noreferrer: Evita que el sitio de destino vea la URL de la página de origen en la 
+  cabecera HTTP "Referer", mejorando la privacidad del usuario.
+-->
+        <a href="https://www.instagram.com/burbano_va/" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" class="pgn" alt="logo de nstagram"></a>
+        <a href="https://github.com/andresburbans" target="_blank" rel="noopener noreferrer"><img src="./img/github.png" class="pgn" alt="logo de GitHub"></a>
+        <a class="pie-pagina" href="https://www.linkedin.com/in/andresbusu/" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" class="pgn" alt="logo de Linkedin"></a>
+        
+    </footer>
+    <script src="./js/merlin.js"></script>
+</body>
+</html>
