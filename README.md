@@ -66,7 +66,7 @@ const procesarTexto = (modo) => {
 
   mostrarResultado(resultado);
 };
-
+---
 Explicación del código:
 Encriptar: Se itera sobre cada carácter del texto. Si es una vocal (existe en el objeto llaves), se reemplaza por su llave. Si no, se mantiene el carácter original.
 Desencriptar: Se utiliza Object.entries para obtener un array de pares [clave, valor] del objeto llaves. Luego, se usa reduce para iterar sobre este array y reemplazar cada "valor" (llave de encriptación) por su "clave" (vocal original) en el texto. Se usa una expresión regular (new RegExp(value, 'g')) para reemplazar todas las ocurrencias de la llave en el texto.
